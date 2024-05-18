@@ -1,8 +1,6 @@
-import Toast from "react-native-simple-toast";
-
-export function currencyFormat(num) {
+export function currencyFormat(num, dp=2) {
   return parseFloat(num)
-    .toFixed(2)
+    .toFixed(dp)
     .replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
 }
 
@@ -47,11 +45,3 @@ export function computeVAT(num) {
   const VAT = num * 0.075;
   return parseFloat(VAT);
 }
-
-export const showToastSuccess = (message) => {
-  Toast.show(message, Toast.LONG);
-};
-
-export const showToastError = (message) => {
-  Toast.showWithGravity(message, Toast.LONG, Toast.BOTTOM);
-};
