@@ -14,7 +14,6 @@ const commonStyles = StyleSheet.create({
 
   orangeText: {
     color: "#ff6200",
-    fontWeight: "bold",
   },
   flexContainer: {
     display: "flex",
@@ -24,15 +23,30 @@ const commonStyles = StyleSheet.create({
   centerFlexContainer: {
     display: "flex",
     flexDirection: "row",
-    justifyContent: "center"
+    justifyContent: "center",
   },
 
   spacedContainer: {
     display: "flex",
     flexDirection: "row",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
   },
 
+  spaceAroundContainer: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-around",
+  },
+  bold: {
+    fontWeight: "bold",
+  },
+  searchBar: {
+    width: "70%",
+    height: 35,
+    backgroundColor: "#fff",
+    borderWidth: 0.5,
+    borderColor: "#999",
+  },
 });
 
 export default commonStyles;
